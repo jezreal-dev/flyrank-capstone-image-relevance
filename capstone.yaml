@@ -1,0 +1,48 @@
+version: "1.0"
+name: "flyrank-capstone-image-relevance"
+title: "AI Image Understanding & Content Matching Engine"
+author: "Jezreal Momoh"
+email: "jezreelmomoh1234@gmail.com"
+track: "Backend AI Engineering"
+milestone: "Week 8 Capstone"
+
+runtime:
+  language: "python"
+  version: "3.12"
+
+commands:
+  run: "python -m uvicorn app.main:app --host 0.0.0.0 --port 8000"
+  seed: "python corpus/seed_corpus.py"
+  test: "pytest"
+  eval: "python scripts/run_eval.py"
+  verify_probes: "python scripts/verify_probes.py"
+
+server:
+  base_url: "http://localhost:8000"
+  endpoints:
+    health: "/health"
+    batch_images: "/api/images/batch"
+    post_suggestions: "/api/posts/{id}/suggestions"
+    reviews: "/api/reviews"
+    costs: "/api/costs/summary"
+    eval: "/api/eval/latest"
+
+probes:
+  probe_1_batch_tags:
+    description: "Run batch job on corpus; images gain valid tags; low confidence flagged"
+    command: "python scripts/verify_probes.py --probe 1"
+  probe_2_fox_ranking:
+    description: "Fox article ranks fox first; wolf and dog rank lower"
+    command: "python scripts/verify_probes.py --probe 2"
+  probe_3_wolf_guard_refusal:
+    description: "Force wolf as candidate for fox post; guard rejects with explanation"
+    command: "python scripts/verify_probes.py --probe 3"
+  probe_4_no_match_rejection:
+    description: "Article with no matching image returns no confident match + reasons"
+    command: "python scripts/verify_probes.py --probe 4"
+  probe_5_eval_precision:
+    description: "Run eval script to compute top-1 precision on labeled dataset"
+    command: "python scripts/verify_probes.py --probe 5"
+  probe_6_cost_tracking:
+    description: "Check cost log for attributed per-call token accounting"
+    command: "python scripts/verify_probes.py --probe 6"
