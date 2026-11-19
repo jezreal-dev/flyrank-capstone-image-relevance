@@ -68,7 +68,7 @@ Evaluated across the 12 canonical benchmark articles in `corpus/eval_set.json` i
 ### 3.1 Setup Environment
 ```bash
 # Clone the repository
-git clone https://github.com/flyrank-bih/flyrank-capstone-image-relevance.git
+git clone https://github.com/jezreal-dev/flyrank-capstone-image-relevance.git
 cd flyrank-capstone-image-relevance
 
 # Install dependencies (Python 3.10+)
