@@ -1,0 +1,728 @@
+"""Corpus generator for AI Image Understanding & Content Matching Engine.
+Generates ~50 structured images across 5 distinct categories, including
+positive matches, negative distractors, and low-confidence edge cases.
+"""
+import json
+from pathlib import Path
+
+def generate_corpus():
+    images = [
+        # ==============================================================================
+        # 1. WILDLIFE & ANIMALS (10 items)
+        # ==============================================================================
+        {
+            "id": "img_fox_01",
+            "url": "https://images.unsplash.com/photo-1474511320723-9a56873ee008",
+            "filename": "red_fox_autumn_forest.jpg",
+            "subject": "red fox",
+            "category": "wildlife",
+            "attributes": ["orange fur", "bushy tail", "forest", "canid", "wildlife", "vulpes vulpes"],
+            "caption": "A vibrant red fox (Vulpes vulpes) standing alert in an autumn birch forest",
+            "confidence": 0.96,
+            "license": "Unsplash Free License"
+        },
+        {
+            "id": "img_wolf_01",
+            "url": "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7",
+            "filename": "timber_wolf_snow.jpg",
+            "subject": "gray wolf",
+            "category": "wildlife",
+            "attributes": ["gray fur", "canis lupus", "snow", "pack predator", "apex predator", "wildlife"],
+            "caption": "A majestic gray wolf (Canis lupus) prowling through deep winter snow",
+            "confidence": 0.95,
+            "license": "Unsplash Free License"
+        },
+        {
+            "id": "img_dog_01",
+            "url": "https://images.unsplash.com/photo-1552053831-71594a27632d",
+            "filename": "golden_retriever_park.jpg",
+            "subject": "domestic dog",
+            "category": "domestic_animal",
+            "attributes": ["golden retriever", "canis familiaris", "pet", "collar", "park", "domestic"],
+            "caption": "A cheerful golden retriever playing fetch on a sunny lawn in a suburban park",
+            "confidence": 0.98,
+            "license": "Unsplash Free License"
+        },
+        {
+            "id": "img_bear_01",
+            "url": "https://images.unsplash.com/photo-1530595467537-0b5996c41f2d",
+            "filename": "grizzly_bear_river.jpg",
+            "subject": "grizzly bear",
+            "category": "wildlife",
+            "attributes": ["brown bear", "ursus arctos", "river", "salmon fishing", "wilderness"],
+            "caption": "A large grizzly bear catching wild salmon in a rushing Alaskan river",
+            "confidence": 0.94,
+            "license": "Unsplash Free License"
+        },
+        {
+            "id": "img_tiger_01",
+            "url": "https://images.unsplash.com/photo-1561731216-c3a4d99437d5",
+            "filename": "bengal_tiger_jungle.jpg",
+            "subject": "bengal tiger",
+            "category": "wildlife",
+            "attributes": ["striped fur", "panthera tigris", "big cat", "jungle", "predator"],
+            "caption": "A Bengal tiger with orange and black stripes moving silently through dense jungle",
+            "confidence": 0.97,
+            "license": "Unsplash Free License"
+        },
+        {
+            "id": "img_eagle_01",
+            "url": "https://images.unsplash.com/photo-1516339901601-2e1b62dc0c45",
+            "filename": "bald_eagle_flight.jpg",
+            "subject": "bald eagle",
+            "category": "wildlife",
+            "attributes": ["bird of prey", "haliaeetus leucocephalus", "wingspan", "sky", "talons"],
+            "caption": "A majestic bald eagle soaring high above mountain peaks against a clear blue sky",
+            "confidence": 0.95,
+            "license": "Unsplash Free License"
+        },
+        {
+            "id": "img_otter_01",
+            "url": "https://images.unsplash.com/photo-1589656966895-2f33e7653819",
+            "filename": "sea_otter_kelp.jpg",
+            "subject": "sea otter",
+            "category": "wildlife",
+            "attributes": ["marine mammal", "enhydra lutris", "kelp forest", "ocean", "playful"],
+            "caption": "A playful sea otter floating on its back wrapped in giant ocean kelp",
+            "confidence": 0.93,
+            "license": "Unsplash Free License"
+        },
+        {
+            "id": "img_elephant_01",
+            "url": "https://images.unsplash.com/photo-1557050543-4d5f4e07ef46",
+            "filename": "african_elephant_savanna.jpg",
+            "subject": "african elephant",
+            "category": "wildlife",
+            "attributes": ["loxodonta africana", "tusks", "trunk", "savanna", "herd"],
+            "caption": "An African elephant walking through acacia trees across the golden Serengeti savanna",
+            "confidence": 0.96,
+            "license": "Unsplash Free License"
+        },
+        {
+            "id": "img_owl_01",
+            "url": "https://images.unsplash.com/photo-1543549790-8b5f4a028cfb",
+            "filename": "barn_owl_perch.jpg",
+            "subject": "barn owl",
+            "category": "wildlife",
+            "attributes": ["tyto alba", "heart-shaped face", "nocturnal", "feathers", "wooden beam"],
+            "caption": "A barn owl perched quietly on an old wooden barn beam in the twilight",
+            "confidence": 0.92,
+            "license": "Unsplash Free License"
+        },
+        {
+            # CRITICAL: Low confidence edge case (< 0.70) to satisfy Requirement & Probe 1!
+            "id": "img_wildlife_ambiguous_01",
+            "url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23",
+            "filename": "distant_shadowy_canid_fog.jpg",
+            "subject": "unidentified canid / shadow",
+            "category": "wildlife",
+            "attributes": ["blurry silhouette", "dense fog", "unclear animal", "low light", "distance"],
+            "caption": "A distant blurry animal silhouette moving through dense fog at dusk, possibly a fox or stray dog",
+            "confidence": 0.62,
+            "license": "Unsplash Free License"
+        },
+
+        # ==============================================================================
+        # 2. NATURE & LANDSCAPES (10 items)
+        # ==============================================================================
+        {
+            "id": "img_nature_01",
+            "url": "https://images.unsplash.com/photo-1448375240586-882707db888b",
+            "filename": "redwood_forest_fog.jpg",
+            "subject": "redwood forest",
+            "category": "landscape",
+            "attributes": ["ancient trees", "sunbeams", "fog", "redwood", "california", "evergreen"],
+            "caption": "Sunlight rays piercing through misty canopy of giant coastal redwood trees",
+            "confidence": 0.97,
+            "license": "Unsplash Free License"
+        },
+        {
+            "id": "img_nature_02",
+            "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b",
+            "filename": "alpine_mountain_peak.jpg",
+            "subject": "snowy mountain peak",
+            "category": "landscape",
+            "attributes": ["alps", "glacier", "sharp summit", "blue sky", "elevation", "rock"],
+            "caption": "Dramatic snow-capped mountain summit rising sharply into an azure alpine sky",
+            "confidence": 0.98,
+            "license": "Unsplash Free License"
+        },
+        {
+            "id": "img_nature_03",
+            "url": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9",
+            "filename": "sahara_desert_dunes.jpg",
+            "subject": "desert sand dunes",
+            "category": "landscape",
+            "attributes": ["sahara", "wind ripples", "golden sand", "arid", "warm light", "dunes"],
+            "caption": "Sweeping curved sand dunes of the Sahara with delicate wind patterns at sunset",
+            "confidence": 0.95,
+            "license": "Unsplash Free License"
+        },
+        {
+            "id": "img_nature_04",
+            "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+            "filename": "tropical_ocean_waves.jpg",
+            "subject": "ocean beach waves",
+            "category": "landscape",
+            "attributes": ["turquoise water", "white sand", "crashing surf", "tropical coastline"],
+            "caption": "Turquoise ocean waves breaking gently along an unpopulated white sand beach",
+            "confidence": 0.96,
+            "license": "Unsplash Free License"
+        },
+        {
+            "id": "img_nature_05",
+            "url": "https://images.unsplash.com/photo-1517824806704-9040b037703b",
+            "filename": "aurora_borealis_night.jpg",
+            "subject": "northern lights",
+            "category": "landscape",
+            "attributes": ["aurora borealis", "green glow", "starry sky", "arctic", "night sky"],
+            "caption": "Ethereal emerald ribbons of the Northern Lights dancing across a star-filled Arctic sky",
+            "confidence": 0.97,
+            "license": "Unsplash Free License"
+        },
+        {
+            "id": "img_nature_06",
+            "url": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9",
+            "filename": "waterfall_gorge.jpg",
+            "subject": "waterfall",
+            "category": "landscape",
+            "attributes": ["cascading water", "mossy canyon", "river mist", "lush vegetation"],
+            "caption": "A thunderous waterfall cascading down a sheer rock face into a lush green gorge",
+            "confidence": 0.95,
+            "license": "Unsplash Free License"
+        },
+        {
+            "id": "img_nature_07",
+            "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
+            "filename": "yosemite_valley_vista.jpg",
+            "subject": "granite canyon valley",
+            "category": "landscape",
+            "attributes": ["half dome", "el capitan", "valley vista", "pine trees", "california"],
+            "caption": "Panoramic sunset viewpoint overlooking the dramatic granite cliffs of Yosemite Valley",
+            "confidence": 0.96,
+            "license": "Unsplash Free License"
+        },
+        {
+            "id": "img_nature_08",
+            "url": "https://images.unsplash.com/photo-1426604966848-d7adac402bff",
+            "filename": "autumn_birch_trees.jpg",
+            "subject": "autumn forest",
+            "category": "landscape",
+            "attributes": ["golden foliage", "fall leaves", "birch trunks", "walking trail"],
+            "caption": "A tranquil trail blanketed with fallen yellow leaves winding through an autumn forest",
+            "confidence": 0.94,
+            "license": "Unsplash Free License"
+        },
+        {
+            "id": "img_nature_09",
+            "url": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05",
+            "filename": "foggy_mountain_range.jpg",
+            "subject": "rolling mountain hills",
+            "category": "landscape",
+            "attributes": ["blue ridge", "morning mist", "layered ridges", "horizon", "peaceful"],
+            "caption": "Layered mountain ridges fading into a blue atmospheric haze in the early morning",
+            "confidence": 0.93,
+            "license": "Unsplash Free License"
+        },
+        {
+            "id": "img_nature_10",
+            "url": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9",
+            "filename": "volcanic_black_sand.jpg",
+            "subject": "volcanic coastline",
+            "category": "landscape",
+            "attributes": ["iceland", "black sand", "basalt columns", "rough ocean", "storm clouds"],
+            "caption": "Dark volcanic basalt beaches battered by moody gray Atlantic breakers in Iceland",
+            "confidence": 0.94,
+            "license": "Unsplash Free License"
+        },
+
+        # ==============================================================================
+        # 3. TECHNOLOGY & SOFTWARE (10 items)
+        # ==============================================================================
+        {
+            "id": "img_tech_01",
+            "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+            "filename": "code_on_laptop_screen.jpg",
+            "subject": "software code editor",
+            "category": "technology",
+            "attributes": ["python code", "syntax highlighting", "macbook", "developer desk", "programming"],
+            "caption": "Lines of clean Python code on an IDE display next to a warm cup of coffee",
+            "confidence": 0.98,
+            "license": "Unsplash Free License"
+        },
+        {
+            "id": "img_tech_02",
+            "url": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
+            "filename": "data_center_server_rack.jpg",
+            "subject": "server infrastructure",
+            "category": "technology",
+            "attributes": ["server racks", "blue led lights", "ethernet cables", "cloud hosting", "data center"],
+            "caption": "Rows of high-performance enterprise server blades glowing with blue LEDs in a data center",
+            "confidence": 0.97,
+            "license": "Unsplash Free License"
+        },
+        {
+            "id": "img_tech_03",
+            "url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5",
+            "filename": "cybersecurity_terminal.jpg",
+            "subject": "cyber security matrix",
+            "category": "technology",
+            "attributes": ["matrix code", "green text", "encryption", "firewall", "hacker security"],
+            "caption": "Encrypted digital security terminal displaying cryptographic hash streams",
+            "confidence": 0.92,
+            "license": "Unsplash Free License"
+        },
+        {
+            "id": "img_tech_04",
+            "url": "https://images.unsplash.com/photo-1518770660439-4636190af475",
+            "filename": "silicon_microchip_cpu.jpg",
+            "subject": "computer processor cpu",
+            "category": "technology",
+            "attributes": ["integrated circuit", "silicon wafer", "pcb board", "hardware", "gold pins"],
+            "caption": "Macro photograph of a cutting-edge silicon CPU die mounted on a green motherboard",
+            "confidence": 0.96,
+            "license": "Unsplash Free License"
+        },
+        {
+            "id": "img_tech_05",
+            "url": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
+            "filename": "industrial_robot_arm.jpg",
+            "subject": "automated robotic arm",
+            "category": "technology",
+            "attributes": ["robotics", "automation", "assembly line", "smart factory", "precision manufacturing"],
+            "caption": "Precision multi-axis yellow robotic arm operating in an advanced electronics factory",
+            "confidence": 0.95,
+            "license": "Unsplash Free License"
+        },
+        {
+            "id": "img_tech_06",
+            "url": "https://images.unsplash.com/photo-1531403009284-440f080d1e12",
+            "filename": "software_architecture_wireframe.jpg",
+            "subject": "system design diagram",
+            "category": "technology",
+            "attributes": ["wireframes", "flowchart", "ui ux design", "sticky notes", "whiteboard planning"],
+            "caption": "Product engineering team whiteboard covered in system architecture diagrams and flows",
+            "confidence": 0.93,
+            "license": "Unsplash Free License"
+        },
+        {
+            "id": "img_tech_07",
+            "url": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b",
+            "filename": "smart_home_iot_device.jpg",
+            "subject": "iot device hub",
+            "category": "technology",
+            "attributes": ["smart home", "connected sensor", "wireless gadget", "home automation"],
+            "caption": "Sleek round IoT smart thermostat displaying room metrics on a minimalist wall",
+            "confidence": 0.91,
+            "license": "Unsplash Free License"
+        },
+        {
+            "id": "img_tech_08",
+            "url": "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+            "filename": "engineering_team_meeting.jpg",
+            "subject": "tech collaborative sprint",
+            "category": "technology",
+            "attributes": ["pair programming", "agile sprint", "software engineers", "laptop discussion"],
+            "caption": "Diverse software engineers gathered around a wooden table conducting a technical design review",
+            "confidence": 0.94,
+            "license": "Unsplash Free License"
+        },
+        {
+            "id": "img_tech_09",
+            "url": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45",
+            "filename": "dual_monitor_workstation.jpg",
+            "subject": "developer workspace",
+            "category": "technology",
+            "attributes": ["dual monitors", "mechanical keyboard", "ergonomic desk", "ambient backlighting"],
+            "caption": "Modern minimalist developer workstation featuring dual 4K monitors and ambient lighting",
+            "confidence": 0.97,
+            "license": "Unsplash Free License"
+        },
+        {
+            "id": "img_tech_10",
+            "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2",
+            "filename": "laptop_terminal_screen.jpg",
+            "subject": "unix bash terminal",
+            "category": "technology",
+            "attributes": ["cli interface", "command prompt", "devops deployment", "linux shell"],
+            "caption": "Laptop running continuous integration scripts inside an open command-line shell",
+            "confidence": 0.95,
+            "license": "Unsplash Free License"
+        },
+
+        # ==============================================================================
+        # 4. ARCHITECTURE & URBAN (10 items)
+        # ==============================================================================
+        {
+            "id": "img_arch_01",
+            "url": "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f",
+            "filename": "eiffel_tower_paris.jpg",
+            "subject": "eiffel tower",
+            "category": "architecture",
+            "attributes": ["paris", "france", "iron lattice", "historic monument", "champ de mars"],
+            "caption": "Low-angle perspective looking up at the intricate iron lattice of the Eiffel Tower in Paris",
+            "confidence": 0.99,
+            "license": "Unsplash Free License"
+        },
+        {
+            "id": "img_arch_02",
+            "url": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab",
+            "filename": "modern_glass_skyscraper.jpg",
+            "subject": "glass corporate skyscraper",
+            "category": "architecture",
+            "attributes": ["modern facade", "glass reflection", "commercial tower", "financial district"],
+            "caption": "Towering glass skyscraper reflecting fluffy clouds in a metropolitan business district",
+            "confidence": 0.96,
+            "license": "Unsplash Free License"
+        },
+        {
+            "id": "img_arch_03",
+            "url": "https://images.unsplash.com/photo-1552832230-c0197dd311b5",
+            "filename": "roman_colosseum_italy.jpg",
+            "subject": "roman colosseum",
+            "category": "architecture",
+            "attributes": ["rome", "italy", "amphitheater", "ancient ruins", "classical stone"],
+            "caption": "The ancient stone arches of the Flavian Amphitheatre (Colosseum) under golden morning light",
+            "confidence": 0.98,
+            "license": "Unsplash Free License"
+        },
+        {
+            "id": "img_arch_04",
+            "url": "https://images.unsplash.com/photo-1513694203232-719a280e022f",
+            "filename": "brutalist_concrete_library.jpg",
+            "subject": "brutalist concrete building",
+            "category": "architecture",
+            "attributes": ["geometric concrete", "brutalism", "geometric shadows", "civic architecture"],
+            "caption": "Striking angular concrete facades and geometric shadow lines of a brutalist university building",
+            "confidence": 0.94,
+            "license": "Unsplash Free License"
+        },
+        {
+            "id": "img_arch_05",
+            "url": "https://images.unsplash.com/photo-1506157786151-b8491531f063",
+            "filename": "golden_gate_bridge_fog.jpg",
+            "subject": "suspension bridge",
+            "category": "architecture",
+            "attributes": ["golden gate", "san francisco", "red steel", "ocean bay", "suspension cables"],
+            "caption": "International Orange towers of the Golden Gate Bridge rising above low rolling sea fog",
+            "confidence": 0.97,
+            "license": "Unsplash Free License"
+        },
+        {
+            "id": "img_arch_06",
+            "url": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26",
+            "filename": "tokyo_shibuya_night.jpg",
+            "subject": "tokyo city street at night",
+            "category": "architecture",
+            "attributes": ["neon signs", "urban bustle", "japan", "metropolis", "shibuya intersection"],
+            "caption": "Vibrant glowing neon signs and bustling urban energy on a Tokyo street at night",
+            "confidence": 0.96,
+            "license": "Unsplash Free License"
+        },
+        {
+            "id": "img_arch_07",
+            "url": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e",
+            "filename": "kyoto_japanese_pagoda.jpg",
+            "subject": "traditional wooden pagoda",
+            "category": "architecture",
+            "attributes": ["kyoto", "temple", "tier roof", "cherry blossoms", "timber joinery"],
+            "caption": "Five-story wooden Buddhist pagoda framed by blooming pink cherry blossom branches",
+            "confidence": 0.95,
+            "license": "Unsplash Free License"
+        },
+        {
+            "id": "img_arch_08",
+            "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+            "filename": "scandinavian_minimalist_home.jpg",
+            "subject": "contemporary residential home",
+            "category": "architecture",
+            "attributes": ["nordic design", "large glass windows", "timber cladding", "clean interior"],
+            "caption": "Modern Scandinavian timber-clad house with floor-to-ceiling glass windows overlooking pine trees",
+            "confidence": 0.95,
+            "license": "Unsplash Free License"
+        },
+        {
+            "id": "img_arch_09",
+            "url": "https://images.unsplash.com/photo-1541888946425-d0fbb186c5f7",
+            "filename": "ancient_greek_parthenon.jpg",
+            "subject": "parthenon acropolis",
+            "category": "architecture",
+            "attributes": ["athens", "greece", "doric columns", "marble", "classical antiquity"],
+            "caption": "The classical Doric marble columns of the Parthenon standing proudly atop the Athenian Acropolis",
+            "confidence": 0.97,
+            "license": "Unsplash Free License"
+        },
+        {
+            "id": "img_arch_10",
+            "url": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5",
+            "filename": "cozy_brick_cafe_facade.jpg",
+            "subject": "quaint urban cafe storefront",
+            "category": "architecture",
+            "attributes": ["red brick", "striped awning", "outdoor patio tables", "cobblestone street"],
+            "caption": "Inviting exterior of a neighborhood European bistro cafe with quaint outdoor sidewalk seating",
+            "confidence": 0.93,
+            "license": "Unsplash Free License"
+        },
+
+        # ==============================================================================
+        # 5. FOOD & CULINARY (10 items)
+        # ==============================================================================
+        {
+            "id": "img_food_01",
+            "url": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd",
+            "filename": "artisan_pour_over_coffee.jpg",
+            "subject": "specialty pour over coffee",
+            "category": "culinary",
+            "attributes": ["chemex", "gooseneck kettle", "fresh brew", "roast beans", "coffee cafe"],
+            "caption": "Barista carefully pouring hot water in spiral motions over freshly ground specialty coffee",
+            "confidence": 0.97,
+            "license": "Unsplash Free License"
+        },
+        {
+            "id": "img_food_02",
+            "url": "https://images.unsplash.com/photo-1509440159596-0249088772ff",
+            "filename": "crusty_sourdough_loaf.jpg",
+            "subject": "artisan sourdough bread",
+            "category": "culinary",
+            "attributes": ["fermented dough", "flour dusting", "scored crust", "rustic bakery"],
+            "caption": "Warm round boule of artisan sourdough bread scored with an ear crust on a baker board",
+            "confidence": 0.96,
+            "license": "Unsplash Free License"
+        },
+        {
+            "id": "img_food_03",
+            "url": "https://images.unsplash.com/photo-1551183053-bf91a1d81141",
+            "filename": "homemade_italian_pasta.jpg",
+            "subject": "fresh tagliatelle pasta",
+            "category": "culinary",
+            "attributes": ["handmade ribbons", "parmesan cheese", "egg pasta", "italian cuisine"],
+            "caption": "Golden ribbons of hand-rolled tagliatelle pasta tossed with parmigiano and fragrant herbs",
+            "confidence": 0.95,
+            "license": "Unsplash Free License"
+        },
+        {
+            "id": "img_food_04",
+            "url": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c",
+            "filename": "fresh_sushi_nigiri_platter.jpg",
+            "subject": "japanese sushi assortment",
+            "category": "culinary",
+            "attributes": ["salmon nigiri", "tuna sashimi", "wasabi", "ginger", "japanese dining"],
+            "caption": "Artfully arranged platter of fresh salmon and tuna nigiri served with wasabi and pickled ginger",
+            "confidence": 0.98,
+            "license": "Unsplash Free License"
+        },
+        {
+            "id": "img_food_05",
+            "url": "https://images.unsplash.com/photo-1513104890138-7c749659a591",
+            "filename": "woodfired_neapolitan_pizza.jpg",
+            "subject": "margherita neapolitan pizza",
+            "category": "culinary",
+            "attributes": ["wood oven", "melted mozzarella", "san marzano sauce", "fresh basil", "crispy crust"],
+            "caption": "Bubbling woodfired Neapolitan pizza crowned with melted buffalo mozzarella and fresh basil leaves",
+            "confidence": 0.97,
+            "license": "Unsplash Free License"
+        },
+        {
+            "id": "img_food_06",
+            "url": "https://images.unsplash.com/photo-1540420773420-3366772f4999",
+            "filename": "fresh_farmers_market_salad.jpg",
+            "subject": "vibrant Mediterranean salad",
+            "category": "culinary",
+            "attributes": ["cherry tomatoes", "avocado slices", "arugula", "olive oil", "organic greens"],
+            "caption": "Crisp salad bowl bursting with colorful heirloom tomatoes, avocado slices, and garden greens",
+            "confidence": 0.94,
+            "license": "Unsplash Free License"
+        },
+        {
+            "id": "img_food_07",
+            "url": "https://images.unsplash.com/photo-1536256263959-770b48d82b0a",
+            "filename": "steaming_matcha_latte.jpg",
+            "subject": "japanese matcha latte",
+            "category": "culinary",
+            "attributes": ["green tea", "foam art", "ceramic mug", "ceremonial grade", "whisked froth"],
+            "caption": "Ceramic cup containing jade-green whisked ceremonial matcha latte decorated with delicate foam art",
+            "confidence": 0.95,
+            "license": "Unsplash Free License"
+        },
+        {
+            "id": "img_food_08",
+            "url": "https://images.unsplash.com/photo-1555507036-ab1f4038808a",
+            "filename": "flaky_french_croissant.jpg",
+            "subject": "golden french croissant",
+            "category": "culinary",
+            "attributes": ["puff pastry", "butter layers", "viennoiserie", "golden brown", "patisserie"],
+            "caption": "Golden crescent of warm, multi-layered flaky French butter croissant on a marble counter",
+            "confidence": 0.96,
+            "license": "Unsplash Free License"
+        },
+        {
+            "id": "img_food_09",
+            "url": "https://images.unsplash.com/photo-1590301157890-4810ed352733",
+            "filename": "spicy_moroccan_shakshuka.jpg",
+            "subject": "shakshuka skillet",
+            "category": "culinary",
+            "attributes": ["poached eggs", "spiced tomato sauce", "cast iron", "cilantro", "bell peppers"],
+            "caption": "Sizzling cast-iron skillet of poached eggs nestled in rich spiced tomato and pepper sauce",
+            "confidence": 0.94,
+            "license": "Unsplash Free License"
+        },
+        {
+            "id": "img_food_10",
+            "url": "https://images.unsplash.com/photo-1563805042-7684c019e1cb",
+            "filename": "artisan_gelato_scoops.jpg",
+            "subject": "italian gelato scoops",
+            "category": "culinary",
+            "attributes": ["pistachio", "dark chocolate", "waffle cone", "creamy dessert", "summer sweet"],
+            "caption": "Two luscious scoops of roasted pistachio and rich dark chocolate Italian gelato on a crisp cone",
+            "confidence": 0.95,
+            "license": "Unsplash Free License"
+        }
+    ]
+
+    return images
+
+
+def generate_eval_set():
+    """Generates the labeled evaluation benchmark set for Top-1 Precision & Mismatch Guard."""
+    eval_cases = [
+        # Case 1: Core Fox article -> Fox must rank first (Probe 2 positive match)
+        {
+            "eval_id": "eval_01_fox_habitat",
+            "post_title": "The Elusive Red Fox: Habitat and Survival in Autumn Woodlands",
+            "post_content": "A detailed scientific study on the hunting patterns and nocturnal habits of the red fox (Vulpes vulpes). We observe how their bushy tail and orange coat help them blend into autumn leaves.",
+            "target_subject": "red fox",
+            "expected_top_image_id": "img_fox_01",
+            "should_pass_guard": True,
+            "test_type": "positive_top1"
+        },
+        # Case 2: Wolf Pack article -> Wolf must match (positive match)
+        {
+            "eval_id": "eval_02_wolf_pack",
+            "post_title": "Apex Predators of the Tundra: Gray Wolves in Winter",
+            "post_content": "Exploring the social hierarchy and cooperative endurance hunting techniques of Canis lupus, the wild gray wolf, across freezing arctic terrain and snowbanks.",
+            "target_subject": "gray wolf",
+            "expected_top_image_id": "img_wolf_01",
+            "should_pass_guard": True,
+            "test_type": "positive_top1"
+        },
+        # Case 3: Dog Training article -> Dog must match (positive match)
+        {
+            "eval_id": "eval_03_dog_companion",
+            "post_title": "Training Your Domestic Canine: Essential Tips for Young Retrievers",
+            "post_content": "Domestic dog owners must understand canine psychology. Taking your golden retriever to a public park with a collar for leash training creates healthy social habits.",
+            "target_subject": "domestic dog",
+            "expected_top_image_id": "img_dog_01",
+            "should_pass_guard": True,
+            "test_type": "positive_top1"
+        },
+        # Case 4: Concept Equivalence (Vulpes vulpes scientific name -> matches Red Fox)
+        {
+            "eval_id": "eval_04_fox_latin",
+            "post_title": "Taxonomic Classification and Diet of Vulpes vulpes",
+            "post_content": "Field research documenting the omnivorous diet of wild Vulpes vulpes. The canid shows high behavioral adaptability in deciduous woodlands with orange fur camouflage.",
+            "target_subject": "red fox",
+            "expected_top_image_id": "img_fox_01",
+            "should_pass_guard": True,
+            "test_type": "semantic_concept_equivalence"
+        },
+        # Case 5: Software Engineering -> Python Code
+        {
+            "eval_id": "eval_05_python_clean_code",
+            "post_title": "Building Resilient REST APIs with Clean Python Architecture",
+            "post_content": "Writing clean, maintainable Python backend code requires strict typing, dependency injection, and separation between HTTP routing and business logic inside your IDE editor.",
+            "target_subject": "software code editor",
+            "expected_top_image_id": "img_tech_01",
+            "should_pass_guard": True,
+            "test_type": "positive_top1"
+        },
+        # Case 6: Cloud Infrastructure -> Server Racks
+        {
+            "eval_id": "eval_06_cloud_datacenters",
+            "post_title": "Scaling Distributed Clusters Across High-Density Data Centers",
+            "post_content": "Modern enterprise clouds rely on physical server blade racks connected with redundant optical fiber ethernet cables and continuous hardware telemetry.",
+            "target_subject": "server infrastructure",
+            "expected_top_image_id": "img_tech_02",
+            "should_pass_guard": True,
+            "test_type": "positive_top1"
+        },
+        # Case 7: Historic Monument -> Eiffel Tower
+        {
+            "eval_id": "eval_07_eiffel_paris",
+            "post_title": "The Engineering Marvel of the Eiffel Tower in Paris",
+            "post_content": "Gustave Eiffel's monumental wrought-iron lattice tower dominates the Champ de Mars skyline in France, standing as a triumph of nineteenth-century civil engineering.",
+            "target_subject": "eiffel tower",
+            "expected_top_image_id": "img_arch_01",
+            "should_pass_guard": True,
+            "test_type": "positive_top1"
+        },
+        # Case 8: Specialty Coffee -> Pour Over
+        {
+            "eval_id": "eval_08_artisan_coffee",
+            "post_title": "The Art of Slow Extraction: Manual Pour-Over Brewing",
+            "post_content": "Dialing in the grind size and water temperature for specialty roasted coffee beans brewed with a glass Chemex and gooseneck kettle ensures optimal floral cup clarity.",
+            "target_subject": "specialty pour over coffee",
+            "expected_top_image_id": "img_food_01",
+            "should_pass_guard": True,
+            "test_type": "positive_top1"
+        },
+        # Case 9: Coastal Redwoods -> Redwood forest
+        {
+            "eval_id": "eval_09_redwood_trees",
+            "post_title": "Walking Among Ancient Coastal Giants: The Redwoods",
+            "post_content": "Fog-draped Pacific coastal redwood groves preserve centuries-old evergreen canopies where morning sunbeams cut through the mystical forest mist.",
+            "target_subject": "redwood forest",
+            "expected_top_image_id": "img_nature_01",
+            "should_pass_guard": True,
+            "test_type": "positive_top1"
+        },
+        # Case 10: Woodfired Pizza -> Neapolitan Pizza
+        {
+            "eval_id": "eval_10_neapolitan_pizza",
+            "post_title": "Tradition of Neapolitan Crust: Fermentation and Wood Ovens",
+            "post_content": "Authentic Italian pizza requires 48-hour slow-fermented dough blistered inside a 900-degree wood-burning oven with San Marzano tomatoes and melted buffalo mozzarella.",
+            "target_subject": "margherita neapolitan pizza",
+            "expected_top_image_id": "img_food_05",
+            "should_pass_guard": True,
+            "test_type": "positive_top1"
+        },
+
+        # ==============================================================================
+        # NEGATIVE / ADVERSARIAL TEST CASES (Mismatch Guard Validation)
+        # ==============================================================================
+        # Case 11: Probe 3 Hard Check: Wolf forced as candidate for Fox post -> MUST BE REJECTED
+        {
+            "eval_id": "eval_11_adversarial_wolf_on_fox",
+            "post_title": "The Red Fox and its Autumn Hunting Habits",
+            "post_content": "A story dedicated solely to the small red fox stalking field mice in the forest.",
+            "candidate_image_id": "img_wolf_01",
+            "expected_guard_action": "REJECTED",
+            "expected_reason_contains": "mismatch",
+            "test_type": "adversarial_guard_rejection"
+        },
+        # Case 12: Probe 4 Hard Check: Quantum Physics / Deep Sea Submarines (Zero match in corpus)
+        {
+            "eval_id": "eval_12_no_match_quantum_physics",
+            "post_title": "Superconducting Qubits and Quantum Teleportation in Cryogenic Chambers",
+            "post_content": "Theoretical analysis of quantum entanglement, superposition state vectors, and topological braiding of non-Abelian anyons in sub-millikelvin dilution refrigerators.",
+            "target_subject": "quantum physics",
+            "expected_guard_action": "NO_CONFIDENT_MATCH",
+            "expected_reason_contains": "below threshold",
+            "test_type": "no_match_rejection"
+        }
+    ]
+
+    return eval_cases
+
+if __name__ == "__main__":
+    out_dir = Path("/home/jmomoh/FlyRank AI/flyrank-capstone-image-relevance/corpus")
+    out_dir.mkdir(parents=True, exist_ok=True)
+    
+    images = generate_corpus()
+    with open(out_dir / "dataset.json", "w") as f:
+        json.dump(images, f, indent=2)
+    print(f"Generated {len(images)} corpus images in dataset.json")
+
+    eval_set = generate_eval_set()
+    with open(out_dir / "eval_set.json", "w") as f:
+        json.dump(eval_set, f, indent=2)
+    print(f"Generated {len(eval_set)} evaluation test cases in eval_set.json")

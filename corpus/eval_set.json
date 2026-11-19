@@ -1,0 +1,110 @@
+[
+  {
+    "eval_id": "eval_01_fox_habitat",
+    "post_title": "The Elusive Red Fox: Habitat and Survival in Autumn Woodlands",
+    "post_content": "A detailed scientific study on the hunting patterns and nocturnal habits of the red fox (Vulpes vulpes). We observe how their bushy tail and orange coat help them blend into autumn leaves.",
+    "target_subject": "red fox",
+    "expected_top_image_id": "img_fox_01",
+    "should_pass_guard": true,
+    "test_type": "positive_top1"
+  },
+  {
+    "eval_id": "eval_02_wolf_pack",
+    "post_title": "Apex Predators of the Tundra: Gray Wolves in Winter",
+    "post_content": "Exploring the social hierarchy and cooperative endurance hunting techniques of Canis lupus, the wild gray wolf, across freezing arctic terrain and snowbanks.",
+    "target_subject": "gray wolf",
+    "expected_top_image_id": "img_wolf_01",
+    "should_pass_guard": true,
+    "test_type": "positive_top1"
+  },
+  {
+    "eval_id": "eval_03_dog_companion",
+    "post_title": "Training Your Domestic Canine: Essential Tips for Young Retrievers",
+    "post_content": "Domestic dog owners must understand canine psychology. Taking your golden retriever to a public park with a collar for leash training creates healthy social habits.",
+    "target_subject": "domestic dog",
+    "expected_top_image_id": "img_dog_01",
+    "should_pass_guard": true,
+    "test_type": "positive_top1"
+  },
+  {
+    "eval_id": "eval_04_fox_latin",
+    "post_title": "Taxonomic Classification and Diet of Vulpes vulpes",
+    "post_content": "Field research documenting the omnivorous diet of wild Vulpes vulpes. The canid shows high behavioral adaptability in deciduous woodlands with orange fur camouflage.",
+    "target_subject": "red fox",
+    "expected_top_image_id": "img_fox_01",
+    "should_pass_guard": true,
+    "test_type": "semantic_concept_equivalence"
+  },
+  {
+    "eval_id": "eval_05_python_clean_code",
+    "post_title": "Building Resilient REST APIs with Clean Python Architecture",
+    "post_content": "Writing clean, maintainable Python backend code requires strict typing, dependency injection, and separation between HTTP routing and business logic inside your IDE editor.",
+    "target_subject": "software code editor",
+    "expected_top_image_id": "img_tech_01",
+    "should_pass_guard": true,
+    "test_type": "positive_top1"
+  },
+  {
+    "eval_id": "eval_06_cloud_datacenters",
+    "post_title": "Scaling Distributed Clusters Across High-Density Data Centers",
+    "post_content": "Modern enterprise clouds rely on physical server blade racks connected with redundant optical fiber ethernet cables and continuous hardware telemetry.",
+    "target_subject": "server infrastructure",
+    "expected_top_image_id": "img_tech_02",
+    "should_pass_guard": true,
+    "test_type": "positive_top1"
+  },
+  {
+    "eval_id": "eval_07_eiffel_paris",
+    "post_title": "The Engineering Marvel of the Eiffel Tower in Paris",
+    "post_content": "Gustave Eiffel's monumental wrought-iron lattice tower dominates the Champ de Mars skyline in France, standing as a triumph of nineteenth-century civil engineering.",
+    "target_subject": "eiffel tower",
+    "expected_top_image_id": "img_arch_01",
+    "should_pass_guard": true,
+    "test_type": "positive_top1"
+  },
+  {
+    "eval_id": "eval_08_artisan_coffee",
+    "post_title": "The Art of Slow Extraction: Manual Pour-Over Brewing",
+    "post_content": "Dialing in the grind size and water temperature for specialty roasted coffee beans brewed with a glass Chemex and gooseneck kettle ensures optimal floral cup clarity.",
+    "target_subject": "specialty pour over coffee",
+    "expected_top_image_id": "img_food_01",
+    "should_pass_guard": true,
+    "test_type": "positive_top1"
+  },
+  {
+    "eval_id": "eval_09_redwood_trees",
+    "post_title": "Walking Among Ancient Coastal Giants: The Redwoods",
+    "post_content": "Fog-draped Pacific coastal redwood groves preserve centuries-old evergreen canopies where morning sunbeams cut through the mystical forest mist.",
+    "target_subject": "redwood forest",
+    "expected_top_image_id": "img_nature_01",
+    "should_pass_guard": true,
+    "test_type": "positive_top1"
+  },
+  {
+    "eval_id": "eval_10_neapolitan_pizza",
+    "post_title": "Tradition of Neapolitan Crust: Fermentation and Wood Ovens",
+    "post_content": "Authentic Italian pizza requires 48-hour slow-fermented dough blistered inside a 900-degree wood-burning oven with San Marzano tomatoes and melted buffalo mozzarella.",
+    "target_subject": "margherita neapolitan pizza",
+    "expected_top_image_id": "img_food_05",
+    "should_pass_guard": true,
+    "test_type": "positive_top1"
+  },
+  {
+    "eval_id": "eval_11_adversarial_wolf_on_fox",
+    "post_title": "The Red Fox and its Autumn Hunting Habits",
+    "post_content": "A story dedicated solely to the small red fox stalking field mice in the forest.",
+    "candidate_image_id": "img_wolf_01",
+    "expected_guard_action": "REJECTED",
+    "expected_reason_contains": "mismatch",
+    "test_type": "adversarial_guard_rejection"
+  },
+  {
+    "eval_id": "eval_12_no_match_quantum_physics",
+    "post_title": "Superconducting Qubits and Quantum Teleportation in Cryogenic Chambers",
+    "post_content": "Theoretical analysis of quantum entanglement, superposition state vectors, and topological braiding of non-Abelian anyons in sub-millikelvin dilution refrigerators.",
+    "target_subject": "quantum physics",
+    "expected_guard_action": "NO_CONFIDENT_MATCH",
+    "expected_reason_contains": "below threshold",
+    "test_type": "no_match_rejection"
+  }
+]
