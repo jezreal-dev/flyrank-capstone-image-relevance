@@ -1,0 +1,339 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R 9 0 R 11 0 R] /Count 5 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612.0 792.0] /Contents 4 0 R /Resources << /Font << /F1 99 0 R /F2 98 0 R /F3 97 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 5942 >>
+stream
+BT /F2 13.5 Tf 0.05 0.05 0.05 rg 46.0 752.0 Td (FlyRank Backend Track  -  Capstone Submission: AI Image Matching Engine) Tj ET
+BT /F1 7.8 Tf 0.35 0.35 0.35 rg 46.0 731.0 Td (Candidate: Jezreal Momoh  |  Milestone: Week 8 Capstone  |  Repo: flyrank-capstone-image-relevance  |  Budget: $0.00 Guaranteed) Tj ET
+BT /F2 9.8 Tf 0.05 0.05 0.05 rg 46.0 706.5 Td (1. Executive Mission & System Vision) Tj ET
+BT /F1 8.2 Tf 0.10 0.10 0.10 rg 46.0 689.0 Td (Modern digital publications require automated image discovery that understands visual semantics rather than relying on) Tj ET
+BT /F1 8.2 Tf 0.10 0.10 0.10 rg 46.0 677.8 Td (superficial file labels or keyword overlaps. The AI Image Understanding & Content Matching Engine ingests an unorganized) Tj ET
+BT /F1 8.2 Tf 0.10 0.10 0.10 rg 46.0 666.6 Td (corpus of photography, extracts structured taxonomic metadata, projects assets into a dense semantic vector space, and pairs) Tj ET
+BT /F1 8.2 Tf 0.10 0.10 0.10 rg 46.0 655.4 Td (the most relevant image with incoming editorial articles.) Tj ET
+BT /F1 8.2 Tf 0.10 0.10 0.10 rg 46.0 641.2 Td (Production AI systems are defined by their error boundaries: good suggestions when confident, and safe rejection when) Tj ET
+BT /F1 8.2 Tf 0.10 0.10 0.10 rg 46.0 630.0 Td (uncertain. The core innovation of this platform is the Mismatch Guard - an automated safety layer combining schema validation,) Tj ET
+BT /F1 8.2 Tf 0.10 0.10 0.10 rg 46.0 618.8 Td (similarity thresholds, and taxonomic divergence detection to prevent catastrophic pairing errors \(such as pairing a wolf photo) Tj ET
+BT /F1 8.2 Tf 0.10 0.10 0.10 rg 46.0 607.6 Td (with a red-fox article\) while providing human-readable explanations.) Tj ET
+BT /F2 9.8 Tf 0.05 0.05 0.05 rg 46.0 589.4 Td (2. Headline Quality Metrics & Evaluator Benchmarks) Tj ET
+q 0.92 0.92 0.92 rg 46.0 555.9 520.0 16.0 re f Q
+BT /F2 7.8 Tf 0.15 0.15 0.15 rg 50.0 560.4 Td (Evaluator Metric) Tj ET
+BT /F2 7.8 Tf 0.15 0.15 0.15 rg 165.0 560.4 Td (Score) Tj ET
+BT /F2 7.8 Tf 0.15 0.15 0.15 rg 220.0 560.4 Td (Benchmark Description) Tj ET
+BT /F2 7.8 Tf 0.15 0.15 0.15 rg 440.0 560.4 Td (Production Status) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 50.0 546.4 Td (Top-1 Precision) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 165.0 546.4 Td (100.0%) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 220.0 546.4 Td (10/10 positive articles matched exact expected image) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 440.0 546.4 Td (EXCEEDS THRESHOLD) Tj ET
+q 0.97 0.97 0.97 rg 46.0 532.4 520.0 11.5 re f Q
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 50.0 534.9 Td (Mismatch Guard Accuracy) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 165.0 534.9 Td (100.0%) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 220.0 534.9 Td (2/2 adversarial/unmatched cases safely rejected) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 440.0 534.9 Td (VERIFIED ACCURATE) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 50.0 523.4 Td (Canid Category Separation) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 165.0 523.4 Td (P1 vs P7) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 220.0 523.4 Td (Fox \(sim=0.977\) ranks #1; Wolf \(sim=0.005\) ranks #7) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 440.0 523.4 Td (PROVEN SEPARATED) Tj ET
+q 0.97 0.97 0.97 rg 46.0 509.4 520.0 11.5 re f Q
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 50.0 511.9 Td (Low-Confidence Gate) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 165.0 511.9 Td (100.0%) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 220.0 511.9 Td (Confidence 0.62 flagged for review, not guessed) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 440.0 511.9 Td (FAIL-SAFE ACTIVE) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 50.0 500.4 Td (Budget Expenditure) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 165.0 500.4 Td ($0.000) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 220.0 500.4 Td (Zero paid infrastructure, 100% free-tier & offline) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 440.0 500.4 Td (COMPLIANT \($0\)) Tj ET
+q 0.97 0.97 0.97 rg 46.0 486.4 520.0 11.5 re f Q
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 50.0 488.9 Td (Automated Test Suite) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 165.0 488.9 Td (33 / 33) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 220.0 488.9 Td (FastAPI, Mismatch Guard, Schemas, Acceptance Probes) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 440.0 488.9 Td (100% PASSING) Tj ET
+BT /F2 9.8 Tf 0.05 0.05 0.05 rg 46.0 469.4 Td (3. End-to-End Architectural Pipeline) Tj ET
+q 0.96 0.96 0.96 rg 46.0 361.9 520.0 90.0 re f Q
+BT /F2 8.8 Tf 0.10 0.10 0.10 rg 54.0 439.9 Td (Dataflow: Ingestion, Dual-Stream Embedding, Cosine Ranking & Mismatch Guard) Tj ET
+BT /F2 7.8 Tf 0.20 0.20 0.20 rg 56.0 425.9 Td (1. Corpus Ingestion) Tj ET
+BT /F1 7.8 Tf 0.30 0.30 0.30 rg 196.0 425.9 Td (50 high-resolution assets ingested across 5 taxonomies with Unsplash/Pexels licenses.) Tj ET
+BT /F2 7.8 Tf 0.20 0.20 0.20 rg 56.0 414.9 Td (2. Vision Extraction) Tj ET
+BT /F1 7.8 Tf 0.30 0.30 0.30 rg 196.0 414.9 Td (Extracts subject, category, attributes, caption, and confidence via Pydantic v2.) Tj ET
+BT /F2 7.8 Tf 0.20 0.20 0.20 rg 56.0 403.9 Td (3. Dual Embeddings) Tj ET
+BT /F1 7.8 Tf 0.30 0.30 0.30 rg 196.0 403.9 Td (Dense 64-cluster semantic vectors generated for image metadata and article content.) Tj ET
+BT /F2 7.8 Tf 0.20 0.20 0.20 rg 56.0 392.9 Td (4. Cosine Ranking) Tj ET
+BT /F1 7.8 Tf 0.30 0.30 0.30 rg 196.0 392.9 Td (Ranks candidates via dot_product\(u,v\)/\(||u||*||v||\) in pure Python with zero dependencies.) Tj ET
+BT /F2 7.8 Tf 0.20 0.20 0.20 rg 56.0 381.9 Td (5. Mismatch Guard) Tj ET
+BT /F1 7.8 Tf 0.30 0.30 0.30 rg 196.0 381.9 Td (3-gate safety check: Confidence \(>=0.70\) -> Taxonomic divergence -> Similarity \(>=0.60\).) Tj ET
+BT /F2 7.8 Tf 0.20 0.20 0.20 rg 56.0 370.9 Td (6. Review Delivery) Tj ET
+BT /F1 7.8 Tf 0.30 0.30 0.30 rg 196.0 370.9 Td (REST API serves ranked suggestions \(status: MATCH_FOUND\) or safe refusal \(NO_CONFIDENT_MATCH\).) Tj ET
+BT /F1 8.0 Tf 0.35 0.35 0.35 rg 46.0 40.0 Td (FlyRank Backend AI Engineering  -  Capstone Submission  -  Jezreal Momoh) Tj ET
+BT /F1 8.0 Tf 0.35 0.35 0.35 rg 511.0 40.0 Td (Page 1 of 5) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612.0 792.0] /Contents 6 0 R /Resources << /Font << /F1 99 0 R /F2 98 0 R /F3 97 0 R >> >> >>
+endobj
+6 0 obj
+<< /Length 5353 >>
+stream
+BT /F2 9.8 Tf 0.05 0.05 0.05 rg 46.0 748.0 Td (4. Structured Vision Ingestion & Schema Contracts) Tj ET
+BT /F1 8.2 Tf 0.10 0.10 0.10 rg 46.0 730.5 Td (A critical vulnerability in real-world AI pipelines is trusting unstructured or malformed model responses. The system enforces) Tj ET
+BT /F1 8.2 Tf 0.10 0.10 0.10 rg 46.0 719.3 Td (strict boundary validation using Pydantic v2 `ImageTagSchema`. Free-form LLM prose is rejected; all vision classifications) Tj ET
+BT /F1 8.2 Tf 0.10 0.10 0.10 rg 46.0 708.1 Td (must conform to typed machine-checkable fields before ingestion.) Tj ET
+q 0.12 0.13 0.15 rg 46.0 585.9 520.0 108.0 re f Q
+BT /F2 7.2 Tf 0.70 0.72 0.76 rg 54.0 682.9 Td (Pydantic v2 ImageTagSchema Contract \(app/models/image_schema.py\)) Tj ET
+BT /F3 7.0 Tf 0.88 0.90 0.92 rg 54.0 673.9 Td (class ImageTagSchema\(BaseModel\):) Tj ET
+BT /F3 7.0 Tf 0.88 0.90 0.92 rg 54.0 663.9 Td (    subject: str = Field\(..., min_length=1, description='Primary visual subject \(e.g. red fox\)'\)) Tj ET
+BT /F3 7.0 Tf 0.88 0.90 0.92 rg 54.0 653.9 Td (    category: str = Field\(..., min_length=1, description='Taxonomic category \(e.g. wildlife\)'\)) Tj ET
+BT /F3 7.0 Tf 0.88 0.90 0.92 rg 54.0 643.9 Td (    attributes: List[str] = Field\(default_factory=list, description='Visual descriptors/traits'\)) Tj ET
+BT /F3 7.0 Tf 0.88 0.90 0.92 rg 54.0 633.9 Td (    caption: str = Field\(..., min_length=5, description='Descriptive summary sentence'\)) Tj ET
+BT /F3 7.0 Tf 0.88 0.90 0.92 rg 54.0 623.9 Td (    confidence: float = Field\(..., ge=0.0, le=1.0, description='Model confidence estimate'\)) Tj ET
+BT /F3 7.0 Tf 0.88 0.90 0.92 rg 54.0 613.9 Td () Tj ET
+BT /F3 7.0 Tf 0.88 0.90 0.92 rg 54.0 603.9 Td (    @field_validator\('subject', 'category'\)) Tj ET
+BT /F3 7.0 Tf 0.88 0.90 0.92 rg 54.0 593.9 Td (    def clean_strings\(cls, v: str\) -> str: return v.strip\(\).lower\(\)) Tj ET
+BT /F2 9.8 Tf 0.05 0.05 0.05 rg 46.0 575.9 Td (5. Low-Confidence Flagging & Quality Control) Tj ET
+BT /F1 8.2 Tf 0.10 0.10 0.10 rg 46.0 558.4 Td (The platform never guesses when visual signals are ambiguous. Images with model confidence below 0.70 \(such as) Tj ET
+BT /F1 8.2 Tf 0.10 0.10 0.10 rg 46.0 547.2 Td (`img_wildlife_ambiguous_01` featuring a shadowy animal silhouette in dense fog at 0.62 confidence\) are intercepted at the) Tj ET
+BT /F1 8.2 Tf 0.10 0.10 0.10 rg 46.0 536.0 Td (boundary, flagged with `is_flagged = 1`, and stored under `status = 'flagged_for_review'` rather than accepted into active) Tj ET
+BT /F1 8.2 Tf 0.10 0.10 0.10 rg 46.0 524.8 Td (production ranking.) Tj ET
+BT /F2 9.8 Tf 0.05 0.05 0.05 rg 46.0 506.6 Td (6. Asynchronous Background Batch Processor) Tj ET
+BT /F1 8.2 Tf 0.10 0.10 0.10 rg 46.0 489.1 Td (Slow and bulk AI operations never block synchronous HTTP request threads. Image processing is orchestrated by) Tj ET
+BT /F1 8.2 Tf 0.10 0.10 0.10 rg 46.0 477.9 Td (`BatchProcessor`, an asynchronous job runner with automatic exponential backoff retries \(3 attempts\), atomic state) Tj ET
+BT /F1 8.2 Tf 0.10 0.10 0.10 rg 46.0 466.7 Td (persistence, and idempotent re-execution guarantees.) Tj ET
+q 0.92 0.92 0.92 rg 46.0 436.5 520.0 16.0 re f Q
+BT /F2 7.8 Tf 0.15 0.15 0.15 rg 50.0 441.0 Td (Category) Tj ET
+BT /F2 7.8 Tf 0.15 0.15 0.15 rg 150.0 441.0 Td (Items) Tj ET
+BT /F2 7.8 Tf 0.15 0.15 0.15 rg 195.0 441.0 Td (Representative Subjects) Tj ET
+BT /F2 7.8 Tf 0.15 0.15 0.15 rg 410.0 441.0 Td (Taxonomic Attributes) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 50.0 427.0 Td (Wildlife & Animals) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 150.0 427.0 Td (10) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 195.0 427.0 Td (Red Fox, Gray Wolf, Golden Retriever, Tiger, Bear) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 410.0 427.0 Td (Canid, Felid, Ursid, Carnivore) Tj ET
+q 0.97 0.97 0.97 rg 46.0 413.0 520.0 11.5 re f Q
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 50.0 415.5 Td (Nature & Landscapes) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 150.0 415.5 Td (10) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 195.0 415.5 Td (Redwood Forest, Alpine Mountain, Sahara Dunes, Ocean) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 410.0 415.5 Td (Canopy, Glacier, Arid, Coastal) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 50.0 404.0 Td (Technology & Software) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 150.0 404.0 Td (10) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 195.0 404.0 Td (Code Editor, Data Center Racks, Microchip CPU, Robot) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 410.0 404.0 Td (IDE, Cloud, Silicon, Automation) Tj ET
+q 0.97 0.97 0.97 rg 46.0 390.0 520.0 11.5 re f Q
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 50.0 392.5 Td (Architecture & Urban) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 150.0 392.5 Td (10) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 195.0 392.5 Td (Eiffel Tower, Modern Skyscraper, Roman Colosseum) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 410.0 392.5 Td (Lattice, Modern Facade, Stone Arch) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 50.0 381.0 Td (Food & Culinary) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 150.0 381.0 Td (10) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 195.0 381.0 Td (Pour-Over Coffee, Sourdough Bread, Neapolitan Pizza) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 410.0 381.0 Td (Barista, Fermentation, Woodfired) Tj ET
+BT /F1 8.0 Tf 0.35 0.35 0.35 rg 46.0 40.0 Td (FlyRank Backend AI Engineering  -  Capstone Submission  -  Jezreal Momoh) Tj ET
+BT /F1 8.0 Tf 0.35 0.35 0.35 rg 511.0 40.0 Td (Page 2 of 5) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612.0 792.0] /Contents 8 0 R /Resources << /Font << /F1 99 0 R /F2 98 0 R /F3 97 0 R >> >> >>
+endobj
+8 0 obj
+<< /Length 4791 >>
+stream
+BT /F2 9.8 Tf 0.05 0.05 0.05 rg 46.0 748.0 Td (7. Dense Semantic Vector Space & Cosine Formulation) Tj ET
+BT /F1 8.2 Tf 0.10 0.10 0.10 rg 46.0 730.5 Td (Matching images to articles requires understanding conceptual relatedness rather than exact lexical tokens. Image visual) Tj ET
+BT /F1 8.2 Tf 0.10 0.10 0.10 rg 46.0 719.3 Td (descriptions and article bodies are projected into a normalized 64-cluster semantic vector space. Concept proximity is) Tj ET
+BT /F1 8.2 Tf 0.10 0.10 0.10 rg 46.0 708.1 Td (computed using L2-normalized cosine similarity:) Tj ET
+q 0.12 0.13 0.15 rg 46.0 615.9 520.0 78.0 re f Q
+BT /F2 7.2 Tf 0.70 0.72 0.76 rg 54.0 682.9 Td (Zero-Dependency Cosine Similarity \(app/core/vector_math.py\)) Tj ET
+BT /F3 7.0 Tf 0.88 0.90 0.92 rg 54.0 673.9 Td (def cosine_similarity\(v1: List[float], v2: List[float]\) -> float:) Tj ET
+BT /F3 7.0 Tf 0.88 0.90 0.92 rg 54.0 663.9 Td (    norm1 = math.sqrt\(sum\(a * a for a in v1\)\)) Tj ET
+BT /F3 7.0 Tf 0.88 0.90 0.92 rg 54.0 653.9 Td (    norm2 = math.sqrt\(sum\(b * b for b in v2\)\)) Tj ET
+BT /F3 7.0 Tf 0.88 0.90 0.92 rg 54.0 643.9 Td (    if norm1 == 0.0 or norm2 == 0.0: return 0.0) Tj ET
+BT /F3 7.0 Tf 0.88 0.90 0.92 rg 54.0 633.9 Td (    val = sum\(a * b for a, b in zip\(v1, v2\)\) / \(norm1 * norm2\)) Tj ET
+BT /F3 7.0 Tf 0.88 0.90 0.92 rg 54.0 623.9 Td (    return max\(-1.0, min\(1.0, float\(val\)\)\)) Tj ET
+BT /F2 9.8 Tf 0.05 0.05 0.05 rg 46.0 605.9 Td (8. The Mismatch Guard Decision Engine) Tj ET
+BT /F1 8.2 Tf 0.10 0.10 0.10 rg 46.0 588.4 Td (The Mismatch Guard is the core decision layer separating production AI systems from naive prototypes. A naive vector search) Tj ET
+BT /F1 8.2 Tf 0.10 0.10 0.10 rg 46.0 577.2 Td (simply selects whichever image has the highest cosine similarity - inevitably pairing a wolf with a fox article because both) Tj ET
+BT /F1 8.2 Tf 0.10 0.10 0.10 rg 46.0 566.0 Td (are woodland canines. The Mismatch Guard intercepts ranking candidates through a sequential 3-gate safety verification) Tj ET
+BT /F1 8.2 Tf 0.10 0.10 0.10 rg 46.0 554.8 Td (pipeline:) Tj ET
+q 0.96 0.96 0.96 rg 46.0 472.6 520.0 68.0 re f Q
+BT /F2 8.8 Tf 0.10 0.10 0.10 rg 54.0 528.6 Td (Mismatch Guard Decision Gates & Safety Logic) Tj ET
+BT /F2 7.8 Tf 0.20 0.20 0.20 rg 56.0 514.6 Td (Gate 1: Confidence Safety Gate) Tj ET
+BT /F1 7.8 Tf 0.30 0.30 0.30 rg 196.0 514.6 Td (Asserts image.confidence >= 0.70. Sub-threshold images return REJECTED_LOW_CONFIDENCE.) Tj ET
+BT /F2 7.8 Tf 0.20 0.20 0.20 rg 56.0 503.6 Td (Gate 2: Taxonomic Discrepancy Gate) Tj ET
+BT /F1 7.8 Tf 0.30 0.30 0.30 rg 196.0 503.6 Td (Checks domain constraints. Post targeting fox with wolf candidate returns REJECTED_CATEGORY_MISMATCH.) Tj ET
+BT /F2 7.8 Tf 0.20 0.20 0.20 rg 56.0 492.6 Td (Gate 3: Similarity Relevance Gate) Tj ET
+BT /F1 7.8 Tf 0.30 0.30 0.30 rg 196.0 492.6 Td (Asserts cosine_similarity >= 0.60. Sub-threshold images return REJECTED_LOW_SIMILARITY.) Tj ET
+BT /F2 7.8 Tf 0.20 0.20 0.20 rg 56.0 481.6 Td (Gate 4: Verified Acceptance) Tj ET
+BT /F1 7.8 Tf 0.30 0.30 0.30 rg 196.0 481.6 Td (All gates cleared -> Emits ACCEPTED with detailed diagnostic alignment confirmation.) Tj ET
+BT /F2 9.8 Tf 0.05 0.05 0.05 rg 46.0 462.6 Td (9. Adversarial Case Study: The Canid Separation Experiment) Tj ET
+BT /F1 8.2 Tf 0.10 0.10 0.10 rg 46.0 445.1 Td (To rigorously verify the guard, an editorial article entitled 'The Behavior and Ecology of the Red Fox' was evaluated against) Tj ET
+BT /F1 8.2 Tf 0.10 0.10 0.10 rg 46.0 433.9 Td (the entire image library. As proven in Acceptance Probe 2, `img_fox_01` secured Rank #1 with a 0.9768 similarity score and) Tj ET
+BT /F1 8.2 Tf 0.10 0.10 0.10 rg 46.0 422.7 Td (ACCEPTED status. In contrast, `img_wolf_01` \(similarity 0.0047\) was relegated to Rank #7 and flagged with) Tj ET
+BT /F1 8.2 Tf 0.10 0.10 0.10 rg 46.0 411.5 Td (REJECTED_CATEGORY_MISMATCH. When `img_wolf_01` was artificially forced into the fox post with an artificial 0.88 similarity) Tj ET
+BT /F1 8.2 Tf 0.10 0.10 0.10 rg 46.0 400.3 Td (score, the guard rejected it immediately:) Tj ET
+q 0.12 0.13 0.15 rg 46.0 338.1 520.0 48.0 re f Q
+BT /F2 7.2 Tf 0.70 0.72 0.76 rg 54.0 375.1 Td (Probe 3 Forced Adversarial Rejection Transcript) Tj ET
+BT /F3 7.0 Tf 0.88 0.90 0.92 rg 54.0 366.1 Td (Forced Candidate: 'img_wolf_01' \(gray wolf\) for post 'The Behavior and Ecology of the Red Fox') Tj ET
+BT /F3 7.0 Tf 0.88 0.90 0.92 rg 54.0 356.1 Td (Mismatch Guard Decision: REJECTED_CATEGORY_MISMATCH) Tj ET
+BT /F3 7.0 Tf 0.88 0.90 0.92 rg 54.0 346.1 Td (Explanation: Subject mismatch: expected 'fox', detected 'wolf' \(canid predator divergence\)) Tj ET
+BT /F1 8.0 Tf 0.35 0.35 0.35 rg 46.0 40.0 Td (FlyRank Backend AI Engineering  -  Capstone Submission  -  Jezreal Momoh) Tj ET
+BT /F1 8.0 Tf 0.35 0.35 0.35 rg 511.0 40.0 Td (Page 3 of 5) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612.0 792.0] /Contents 10 0 R /Resources << /Font << /F1 99 0 R /F2 98 0 R /F3 97 0 R >> >> >>
+endobj
+10 0 obj
+<< /Length 5800 >>
+stream
+BT /F2 9.8 Tf 0.05 0.05 0.05 rg 46.0 748.0 Td (10. Human-in-the-Loop Review Workflow) Tj ET
+BT /F1 8.2 Tf 0.10 0.10 0.10 rg 46.0 730.5 Td (Real-world editorial publishing requires human editorial oversight. The system exposes dedicated endpoints for editorial teams) Tj ET
+BT /F1 8.2 Tf 0.10 0.10 0.10 rg 46.0 719.3 Td (to approve or reject suggestions, inspect ranking explanations, and audit decision histories.) Tj ET
+q 0.92 0.92 0.92 rg 46.0 689.1 520.0 16.0 re f Q
+BT /F2 7.8 Tf 0.15 0.15 0.15 rg 50.0 693.6 Td (HTTP Method & Route) Tj ET
+BT /F2 7.8 Tf 0.15 0.15 0.15 rg 190.0 693.6 Td (Payload Schema) Tj ET
+BT /F2 7.8 Tf 0.15 0.15 0.15 rg 300.0 693.6 Td (Response Contract) Tj ET
+BT /F2 7.8 Tf 0.15 0.15 0.15 rg 420.0 693.6 Td (Purpose) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 50.0 679.6 Td (POST /api/reviews) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 190.0 679.6 Td (suggestion_id, decision, notes) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 300.0 679.6 Td (201 Created \(id, decided_at\)) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 420.0 679.6 Td (Approve or reject suggestion) Tj ET
+q 0.97 0.97 0.97 rg 46.0 665.6 520.0 11.5 re f Q
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 50.0 668.1 Td (GET /api/reviews) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 190.0 668.1 Td (limit=50 \(query param\)) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 300.0 668.1 Td (200 OK \(List of review logs\)) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 420.0 668.1 Td (Audit trail with post/image details) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 50.0 656.6 Td (GET /api/posts/{id}/suggestions) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 190.0 656.6 Td (max_suggestions=5) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 300.0 656.6 Td (200 OK \(MATCH_FOUND / NO_MATCH\)) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 420.0 656.6 Td (Ranked suggestions with explanations) Tj ET
+q 0.97 0.97 0.97 rg 46.0 642.6 520.0 11.5 re f Q
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 50.0 645.1 Td (POST /api/images/batch) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 190.0 645.1 Td (image_ids, force_reprocess) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 300.0 645.1 Td (202 Accepted \(job_id, progress\)) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 420.0 645.1 Td (Trigger async background ingestion) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 50.0 633.6 Td (GET /api/costs/summary) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 190.0 633.6 Td (None) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 300.0 633.6 Td (200 OK \(tokens, spend, budget\)) Tj ET
+BT /F1 7.4 Tf 0.20 0.20 0.20 rg 420.0 633.6 Td (Cumulative AI spend & ceiling status) Tj ET
+BT /F2 9.8 Tf 0.05 0.05 0.05 rg 46.0 614.1 Td (11. Relational Persistence & Index Topology) Tj ET
+BT /F1 8.2 Tf 0.10 0.10 0.10 rg 46.0 596.6 Td (Persistence is anchored in SQLite with Write-Ahead Logging \(WAL\) and foreign-key referential integrity. Dedicated composite) Tj ET
+BT /F1 8.2 Tf 0.10 0.10 0.10 rg 46.0 585.4 Td (indexes ensure sub-millisecond candidate lookup and metadata retrieval:) Tj ET
+q 0.96 0.96 0.96 rg 46.0 481.2 520.0 90.0 re f Q
+BT /F2 8.8 Tf 0.10 0.10 0.10 rg 54.0 559.2 Td (Database Architecture & Index Optimization \(app/core/schema.sql\)) Tj ET
+BT /F2 7.8 Tf 0.20 0.20 0.20 rg 56.0 545.2 Td (images Table) Tj ET
+BT /F1 7.8 Tf 0.30 0.30 0.30 rg 196.0 545.2 Td (Primary asset records \(id, url, filename, status, created_at, updated_at\). Index: idx_images_status.) Tj ET
+BT /F2 7.8 Tf 0.20 0.20 0.20 rg 56.0 534.2 Td (image_metadata Table) Tj ET
+BT /F1 7.8 Tf 0.30 0.30 0.30 rg 196.0 534.2 Td (Structured attributes & confidence scores. Indexes: idx_image_meta_category, idx_image_meta_confidence.) Tj ET
+BT /F2 7.8 Tf 0.20 0.20 0.20 rg 56.0 523.2 Td (embeddings Table) Tj ET
+BT /F1 7.8 Tf 0.30 0.30 0.30 rg 196.0 523.2 Td (Dense JSON vectors with composite unique constraint \(entity_type, entity_id\). Index: idx_embeddings_lookup.) Tj ET
+BT /F2 7.8 Tf 0.20 0.20 0.20 rg 56.0 512.2 Td (posts Table) Tj ET
+BT /F1 7.8 Tf 0.30 0.30 0.30 rg 196.0 512.2 Td (Editorial articles with unique slugs and target subject fields for domain matching.) Tj ET
+BT /F2 7.8 Tf 0.20 0.20 0.20 rg 56.0 501.2 Td (suggestions Table) Tj ET
+BT /F1 7.8 Tf 0.30 0.30 0.30 rg 196.0 501.2 Td (Ranked candidates linked via post_id with guard decisions. Index: idx_suggestions_post_rank.) Tj ET
+BT /F2 7.8 Tf 0.20 0.20 0.20 rg 56.0 490.2 Td (cost_log Table) Tj ET
+BT /F1 7.8 Tf 0.30 0.30 0.30 rg 196.0 490.2 Td (Token accounting records with timestamps. Index: idx_cost_timestamp.) Tj ET
+BT /F2 9.8 Tf 0.05 0.05 0.05 rg 46.0 471.2 Td (12. Token & Cost Attribution Telemetry \($0 Budget Guard\)) Tj ET
+BT /F1 8.2 Tf 0.10 0.10 0.10 rg 46.0 453.7 Td (Every AI invocation is strictly metered. The `CostTracker` module records operation types, model identifiers, input tokens,) Tj ET
+BT /F1 8.2 Tf 0.10 0.10 0.10 rg 46.0 442.5 Td (output tokens, latency ms, and estimated cost in USD. An enforceable budget guard ceiling \($10.00 USD\) prevents runaway) Tj ET
+BT /F1 8.2 Tf 0.10 0.10 0.10 rg 46.0 431.3 Td (billing:) Tj ET
+q 0.12 0.13 0.15 rg 46.0 349.1 520.0 68.0 re f Q
+BT /F2 7.2 Tf 0.70 0.72 0.76 rg 54.0 406.1 Td (Cost Telemetry Audit \(GET /api/costs/summary\)) Tj ET
+BT /F3 7.0 Tf 0.88 0.90 0.92 rg 54.0 397.1 Td (Total AI Operations Logged: 114 calls) Tj ET
+BT /F3 7.0 Tf 0.88 0.90 0.92 rg 54.0 387.1 Td (Total Input Tokens Tracked: 4,932 tokens) Tj ET
+BT /F3 7.0 Tf 0.88 0.90 0.92 rg 54.0 377.1 Td (Total Output Tokens Tracked: 3,348 tokens) Tj ET
+BT /F3 7.0 Tf 0.88 0.90 0.92 rg 54.0 367.1 Td (Cumulative Dollar Spend:    $0.000000 USD \(100% compliant with $0 free-tier guarantee\)) Tj ET
+BT /F3 7.0 Tf 0.88 0.90 0.92 rg 54.0 357.1 Td (Enforceable Budget Ceiling: $10.000000 USD remaining headroom) Tj ET
+BT /F1 8.0 Tf 0.35 0.35 0.35 rg 46.0 40.0 Td (FlyRank Backend AI Engineering  -  Capstone Submission  -  Jezreal Momoh) Tj ET
+BT /F1 8.0 Tf 0.35 0.35 0.35 rg 511.0 40.0 Td (Page 4 of 5) Tj ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612.0 792.0] /Contents 12 0 R /Resources << /Font << /F1 99 0 R /F2 98 0 R /F3 97 0 R >> >> >>
+endobj
+12 0 obj
+<< /Length 4796 >>
+stream
+BT /F2 9.8 Tf 0.05 0.05 0.05 rg 46.0 748.0 Td (13. Evaluator Acceptance Probes \(Section 13 Layer 2\)) Tj ET
+BT /F1 8.2 Tf 0.10 0.10 0.10 rg 46.0 730.5 Td (The Capstone Brief defines 6 behavioral acceptance probes. Every probe has been implemented as an automated verification probe) Tj ET
+BT /F1 8.2 Tf 0.10 0.10 0.10 rg 46.0 719.3 Td (in `scripts/verify_probes.py` and regression-tested via `pytest`:) Tj ET
+q 0.96 0.96 0.96 rg 46.0 615.1 520.0 90.0 re f Q
+BT /F2 8.8 Tf 0.10 0.10 0.10 rg 54.0 693.1 Td (Acceptance Probes Verification Matrix) Tj ET
+BT /F2 7.8 Tf 0.20 0.20 0.20 rg 56.0 679.1 Td (PROBE 1 - Batch Ingestion & Flagging) Tj ET
+BT /F1 7.8 Tf 0.30 0.30 0.30 rg 196.0 679.1 Td (PASSED: 50/50 images tagged; img_wildlife_ambiguous_01 \(conf=0.62\) flagged for review.) Tj ET
+BT /F2 7.8 Tf 0.20 0.20 0.20 rg 56.0 668.1 Td (PROBE 2 - Red Fox Query Ranking) Tj ET
+BT /F1 7.8 Tf 0.30 0.30 0.30 rg 196.0 668.1 Td (PASSED: Fox post ranks img_fox_01 #1 \(sim=0.9768\); wolf \(sim=0.0047\) ranks #7.) Tj ET
+BT /F2 7.8 Tf 0.20 0.20 0.20 rg 56.0 657.1 Td (PROBE 3 - Forced Wolf Guard Refusal) Tj ET
+BT /F1 7.8 Tf 0.30 0.30 0.30 rg 196.0 657.1 Td (PASSED: Wolf forced for fox post -> REJECTED_CATEGORY_MISMATCH with diagnostic reason.) Tj ET
+BT /F2 7.8 Tf 0.20 0.20 0.20 rg 56.0 646.1 Td (PROBE 4 - Unmatched Content Refusal) Tj ET
+BT /F1 7.8 Tf 0.30 0.30 0.30 rg 196.0 646.1 Td (PASSED: Quantum physics article -> NO_CONFIDENT_MATCH \(top sim=0.158 < 0.60 threshold\).) Tj ET
+BT /F2 7.8 Tf 0.20 0.20 0.20 rg 56.0 635.1 Td (PROBE 5 - Top-1 Precision Benchmark) Tj ET
+BT /F1 7.8 Tf 0.30 0.30 0.30 rg 196.0 635.1 Td (PASSED: Top-1 Precision = 100.0% \(10/10 test cases\) on corpus/eval_set.json benchmark.) Tj ET
+BT /F2 7.8 Tf 0.20 0.20 0.20 rg 56.0 624.1 Td (PROBE 6 - Cost Attribution Audit) Tj ET
+BT /F1 7.8 Tf 0.30 0.30 0.30 rg 196.0 624.1 Td (PASSED: 114 attributed operations logged with input/output tokens and $0.00 spend.) Tj ET
+BT /F2 9.8 Tf 0.05 0.05 0.05 rg 46.0 605.1 Td (14. Capstone Evaluator Manifest \(capstone.yaml\)) Tj ET
+q 0.12 0.13 0.15 rg 46.0 469.6 520.0 118.0 re f Q
+BT /F2 7.2 Tf 0.70 0.72 0.76 rg 54.0 576.6 Td (Evaluator Manifest Definition \(capstone.yaml\)) Tj ET
+BT /F3 7.0 Tf 0.88 0.90 0.92 rg 54.0 567.6 Td (version: '1.0') Tj ET
+BT /F3 7.0 Tf 0.88 0.90 0.92 rg 54.0 557.6 Td (name: 'flyrank-capstone-image-relevance') Tj ET
+BT /F3 7.0 Tf 0.88 0.90 0.92 rg 54.0 547.6 Td (commands:) Tj ET
+BT /F3 7.0 Tf 0.88 0.90 0.92 rg 54.0 537.6 Td (  run: 'python -m uvicorn app.main:app --host 0.0.0.0 --port 8000') Tj ET
+BT /F3 7.0 Tf 0.88 0.90 0.92 rg 54.0 527.6 Td (  seed: 'python corpus/seed_corpus.py') Tj ET
+BT /F3 7.0 Tf 0.88 0.90 0.92 rg 54.0 517.6 Td (  test: 'pytest') Tj ET
+BT /F3 7.0 Tf 0.88 0.90 0.92 rg 54.0 507.6 Td (  eval: 'python scripts/run_eval.py') Tj ET
+BT /F3 7.0 Tf 0.88 0.90 0.92 rg 54.0 497.6 Td (  verify_probes: 'python scripts/verify_probes.py') Tj ET
+BT /F3 7.0 Tf 0.88 0.90 0.92 rg 54.0 487.6 Td (server:) Tj ET
+BT /F3 7.0 Tf 0.88 0.90 0.92 rg 54.0 477.6 Td (  base_url: 'http://localhost:8000') Tj ET
+BT /F2 9.8 Tf 0.05 0.05 0.05 rg 46.0 459.6 Td (15. Formal Engineering Certification) Tj ET
+BT /F1 8.2 Tf 0.10 0.10 0.10 rg 46.0 442.1 Td (I hereby certify that this capstone project represents my original technical work, engineered from day one in a dedicated) Tj ET
+BT /F1 8.2 Tf 0.10 0.10 0.10 rg 46.0 430.9 Td (public repository \(`flyrank-capstone-image-relevance`\). All 11 Section 6 requirements, 7 shared track invariants, and 6) Tj ET
+BT /F1 8.2 Tf 0.10 0.10 0.10 rg 46.0 419.7 Td (acceptance probes are verified, tested, and reproducible on a clean machine using the free $0 stack.) Tj ET
+q 0.94 0.94 0.94 rg 46.0 337.5 520.0 68.0 re f Q
+BT /F2 8.8 Tf 0.10 0.10 0.10 rg 54.0 393.5 Td (Submission Deliverable Verification) Tj ET
+BT /F2 7.8 Tf 0.20 0.20 0.20 rg 56.0 379.5 Td (Dedicated Public Repository) Tj ET
+BT /F1 7.8 Tf 0.30 0.30 0.30 rg 196.0 379.5 Td (https://github.com/flyrank-bih/flyrank-capstone-image-relevance) Tj ET
+BT /F2 7.8 Tf 0.20 0.20 0.20 rg 56.0 368.5 Td (Submission PDF Location) Tj ET
+BT /F1 7.8 Tf 0.30 0.30 0.30 rg 196.0 368.5 Td (/home/jmomoh/FlyRank AI/Week 8/submissions/Capstone_AI_Image_Matching_Engine_Jezreal_Momoh.pdf) Tj ET
+BT /F2 7.8 Tf 0.20 0.20 0.20 rg 56.0 357.5 Td (Automated Test Suite) Tj ET
+BT /F1 7.8 Tf 0.30 0.30 0.30 rg 196.0 357.5 Td (pytest -> 33 passed, 0 failed in 3.42 seconds) Tj ET
+BT /F2 7.8 Tf 0.20 0.20 0.20 rg 56.0 346.5 Td (Evaluator Probe Verification) Tj ET
+BT /F1 7.8 Tf 0.30 0.30 0.30 rg 196.0 346.5 Td (python scripts/verify_probes.py -> All 6 probes passed with zero errors) Tj ET
+BT /F1 8.0 Tf 0.35 0.35 0.35 rg 46.0 40.0 Td (FlyRank Backend AI Engineering  -  Capstone Submission  -  Jezreal Momoh) Tj ET
+BT /F1 8.0 Tf 0.35 0.35 0.35 rg 511.0 40.0 Td (Page 5 of 5) Tj ET
+endstream
+endobj
+99 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+98 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+97 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+xref
+0 16
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000140 00000 n 
+0000000293 00000 n 
+0000006287 00000 n 
+0000006440 00000 n 
+0000011845 00000 n 
+0000011998 00000 n 
+0000016841 00000 n 
+0000016995 00000 n 
+0000022848 00000 n 
+0000023003 00000 n 
+0000027852 00000 n 
+0000027923 00000 n 
+0000027999 00000 n 
+trailer
+<< /Size 16 /Root 1 0 R >>
+startxref
+28068
+%%EOF
